@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project 4 Presentation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+ <!--<div class="overlay"></div>-->
+
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="backgroundvid2.mp4" type="video/mp4">
+  </video>
+ 
+</header>
+<body>
+
+
+
+<img src="images/menu.png" id="menuIcon">
+
+<div class="menu-box" id="menuBox">
+	<ul class="nav-links">
+    	<li><a class="active"href="index.html">HOME</a></li>
+        <li><a href="pages/Intro.html">INTRODUCTION</a></li>
+        <li><a href="pages/clustering.html">BREAST CANCER</a></li>
+        <li><a href="pages/colorectal_cancer.html">COLORECTAL CANCER</a></li>
+        <li><a href="pages/heart.html">HEART</a></li>
+        <li><a href="pages/lung_segmentation.html">LUNG SEGMENTATION</a></li>
+        <li><a href="pages/time_series.html">MATERNAL</a></li>
+    </ul>
+</div>
+
+<script>
+
+let menuBox = document.getElementById("menuBox");
+let menuIcon = document.getElementById("menuIcon");
+
+menuIcon.onclick = function(){
+	menuBox.classList.toggle("open-menu");
+
+    if(menuBox.classList.contains("open-menu")){
+        menuIcon.src = "images/close.png";
+    }
+    else{
+        menuIcon.src = "images/menu.png";
+    }
+}
+
+</script>
+
+</body>
+</html>
