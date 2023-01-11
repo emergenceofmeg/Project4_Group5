@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project 4 Presentation</title>
+	<link rel="stylesheet" href="../style.css">
+	<title>Introduction</title>
+</head>
+<body>
+<!--<div class="container"></div>-->
+
+ <img src="../images/menu.png" id="menuIcon">
+
+ <div class="menu-box" id="menuBox">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a class="active"href="Intro.html">INTRODUCTION</a></li>
+        <li><a href="clustering.html">BREAST CANCER</a></li>
+        <li><a href="colorectal_cancer.html">COLORECTAL CANCER</a></li>
+        <li><a href="heart.html">HEART</a></li>
+        <li><a href="lung_segmentation.html">LUNG SEGMENTATION</a></li>
+        <li><a href="time_series.html">MATERNAL</a></li>
+    </ul>
+</div>
+
+<script>
+
+let menuBox = document.getElementById("menuBox");
+let menuIcon = document.getElementById("menuIcon");
+
+menuIcon.onclick = function(){
+	menuBox.classList.toggle("open-menu");
+
+    if(menuBox.classList.contains("open-menu")){
+        menuIcon.src = "../images/close.png";
+    }
+    else{
+        menuIcon.src = "../images/menu.png";
+    }
+}
+
+</script>
+
+<style type="text/css">
+
+body {
+  background-image: url("https://healthitanalytics.com/images/site/article_headers/_normal/AI_NLP.png");
+  background-size: cover;
+}
+
+.main-container {
+max-width: 1000px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+background: white;
+border-style: outset;
+border-width: 7px;
+border-color: #F5F5F5;
+font-size: 1.5vw;
+}
+
+.space{
+  margin-top: 15%;
+  margin-left: 42%;
+}
+
+</style>
+
+<div class="overlay"></div>
+<div class="space"></div>
+<div class="container-fluid main-container">
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><center>Introduction</center></h1>
+<h4 class="author">Group Members: Kyle Admire, Travis Frocione, Tashuna Jackson, Xenia
+Liu, Le Nhan, Megan Williams</h4>
+<h4 class="date">2023-01-08</h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2><center>Project Goals</center></h2>
+<p>Machine Learning is already being utilized to make several improvements in medicine. From patient monitoring – now incorporated in wearable technology like your Apple Watch – to reconstructing diseases in the lab for simulation purposes, machine learning is enhancing medical advancements and consequently, our quality of life. Developing diagnostics is at the center of these enhancements. Patient symptoms often lie dormant, arise inconsistently, and present in various ways, convoluting current diagnostic techniques. This is just one variable which often leads to a high diagnostic error rate. This project explores how machine learning algorithms can assist in improving diagnostic accuracy.</p>
+<p><br> <br></p>
+
+
+</body>
+</html>

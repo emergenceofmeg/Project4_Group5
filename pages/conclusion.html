@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project 4 Presentation</title>
+	<link rel="stylesheet" href="../style.css">
+	<title>Introduction</title>
+</head>
+<body>
+<!--<div class="container"></div>-->
+
+ <img src="../images/menu.png" id="menuIcon">
+
+ <div class="menu-box" id="menuBox">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="Intro.html">INTRODUCTION</a></li>
+        <li><a href="clustering.html">BREAST CANCER</a></li>
+        <li><a href="colorectal_cancer.html">COLORECTAL CANCER</a></li>
+        <li><a href="heart.html">HEART</a></li>
+        <li><a href="lung_segmentation.html">LUNG SEGMENTATION</a></li>
+        <li><a href="time_series.html">MATERNAL</a></li>
+        <li><a class="active"href="conclusion.html">CONCLUSION</a></li>
+    </ul>
+</div>
+
+<script>
+
+let menuBox = document.getElementById("menuBox");
+let menuIcon = document.getElementById("menuIcon");
+
+menuIcon.onclick = function(){
+	menuBox.classList.toggle("open-menu");
+
+    if(menuBox.classList.contains("open-menu")){
+        menuIcon.src = "../images/close.png";
+    }
+    else{
+        menuIcon.src = "../images/menu.png";
+    }
+}
+
+</script>
+
+<style type="text/css">
+
+body {
+  background-image: url("https://healthitanalytics.com/images/site/article_headers/_normal/AI_NLP.png");
+  background-size: cover;
+}
+
+.main-container {
+max-width: 1000px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+background: white;
+border-style: outset;
+border-width: 7px;
+border-color: #F5F5F5;
+font-size: 1.5vw;
+}
+
+.space{
+  margin-top: 15%;
+  margin-left: 42%;
+}
+
+</style>
+
+<div class="overlay"></div>
+<div class="space"></div>
+<div class="container-fluid main-container">
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><center>Conclusion</center></h1>
+<h4 class="author"></h4>
+<h4 class="date"></h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2><center></center></h2>
+<p>Machine learning was used in group 5  to predict various outcomes from patients' clinic data. The ARIMA model allowed us to predict how many home deliveries will be attended by a skilled birth attendant in 2020 based on data collected over a 4 year period. A convolutional neural network  was created by using the UNET architecture. It allowed us to look at an image of a  patients’ lung in various dimensions and make predictions. Lastly Linear Discriminant analysis- LDA was used to give a visualization of Breast Cancer. Although the models are not perfect, it can identify opportunities to improve healthcare services. Allow for future predictions for healthcare leaders to identify possible issues prior to them occurring.  With the help of machine learning, healthcare workers and/or organizations will have more free time for taking care of patients. 
+</p>
+<p><br> <br></p>
+
+
+</body>
+</html>
